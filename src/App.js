@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Counter from './component/Counter';
+
 import './App.css';
+import TextInput from './component/TextInput';
+import { useState } from 'react';
+
+// Import all static data here
+const details = {
+  name: "lars",
+  gender: "male",
+}
 
 function App() {
+  const [ state, setState ] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Counter />
+
+      <TextInput data={details} />
+    
     </div>
   );
 }
