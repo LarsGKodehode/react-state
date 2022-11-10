@@ -3,7 +3,9 @@ import {
 } from "react";
 import Child from "./Child";
 
-
+/**
+ * A component that register changes and updates a display field 
+ */
 const TextInput = (props) => {
   const { data } = props;
 
