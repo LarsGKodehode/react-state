@@ -33,6 +33,8 @@ const TextInput = (props) => {
 
   
   useEffect(() => {
+    console.log("This effect was run");
+
     fetchData(setFetchedData);
 
     // The content of the dependecy array should only be primitives
