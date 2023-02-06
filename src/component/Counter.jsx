@@ -18,7 +18,9 @@ const Counter = () => {
       <h1>{count}</h1>
 
       <button
-        onClick={() => handleClick()}
+        onClick={handleClick}
+        onMouseEnter={(event) => {console.log(event)}}
+
       >
         Increment
       </button>
